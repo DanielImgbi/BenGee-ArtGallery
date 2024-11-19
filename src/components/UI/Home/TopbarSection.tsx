@@ -40,7 +40,7 @@ export const TopbarSection = () => {
         >
           <div className="flex items-center gap-3">
             <Image src={logo} height={100} width={100} alt="logo" />
-            <span className="hidden text-lg tracking-[-0.0225rem] lg:block">BenGee ArtGallery</span>
+            <span className="hidden text-lg text-freelancer_orange tracking-[-0.0225rem] lg:block">BenGee ArtGallery</span>
           </div>
 
           <div className="md:hidden text-freelancer_black">

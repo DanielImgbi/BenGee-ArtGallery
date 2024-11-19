@@ -6,9 +6,10 @@ import {
   HeroSection,
   Preloader,
   // ServicesSection,
-  TeamSection,
+  WorkSection,
   TestimonialSection,
 } from '@/components';
+import FloatingButton from '@/components/Common/FloatingButton';
 
 export default function Home() {
   return (
@@ -19,9 +20,11 @@ export default function Home() {
       <AudienceSection />
       {/* <ServicesSection /> */}
       <TestimonialSection />
-      <TeamSection />
-      {/*<FAQSection /> */}
+      <WorkSection />
+      {/* <FAQSection /> */}
       <Footer />
+
+      <FloatingButton />
     </main>
   );
 }

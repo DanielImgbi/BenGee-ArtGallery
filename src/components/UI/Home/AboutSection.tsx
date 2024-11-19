@@ -15,6 +15,10 @@ import placeholder_7 from '@/benji-art-gallery/tinywow_change_bg_photo_68076902 
 import placeholder_8 from '@/benji-art-gallery/tinywow_change_bg_photo_68076902.png';
 
 
+//ps
+import flyer from '@/works/IMG-20241116-WA0165.jpg';
+
+
 const AboutSection = () => {
   const rowOne = [placeholder_5, placeholder_1, placeholder_2, placeholder_6];
   const rowTwo = [placeholder_3, placeholder_4, placeholder_7, placeholder_8];
@@ -42,6 +46,18 @@ const AboutSection = () => {
 
         <div className="max-w-[22.75rem] text-freelancer_orange leading-[1.375rem] flex flex-col text-sm md:text-base">
           <MaskText phrases={paragraphText} tag="p" />
+
+
+          <div className=' relative w-full h-[30rem] overflow-y-hidden'>
+            <Image
+              src={flyer}
+              alt="hero banner"
+              layout='fill'
+              quality={100}
+              objectFit='contain'
+              className="w-[100%] h-[100%]"
+            />
+          </div>
         </div>
       </div>
 

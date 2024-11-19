@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaWhatsapp } from 'react-icons/fa';
+import { RiFacebookCircleFill, RiInstagramFill } from 'react-icons/ri';
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -104,7 +106,7 @@ const Footer = () => {
               </h1>
             </div>
 
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col items-center justify-between gap-4 lg:flex-row">
               <div className="flex items-center gap-5 md:gap-10">
                 {['Term', 'Privacy'].map((link, index) => (
                   <motion.a
@@ -120,33 +122,52 @@ const Footer = () => {
               </div>
 
               <motion.div
-                className="flex items-center gap-2 md:gap-3 max-md:text-xs"
+                className="flex flex-col items-center gap-2 md:gap-3 max-md:text-xs lg:flex-row"
                 variants={sectionVariants}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="max-md:w-4"
-                >
-                  <path
-                    d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M14 9C13.52 8.4 12.93 8 12 8C7.82902 8 7.82902 16 12 16C12.93 16 13.52 15.6 14 15"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                2024 BenGee ArtGallery All rights reserved
+
+
+                <div className="flex items-center gap-3 justify-center flex-wrap my-4">
+                  {/* <motion.a
+                    href="https://www.x.com/demainc_"
+                    target="_blank"
+                    className="flex justify-center items-center w-[40px]"
+                  >
+                    <BsTwitterX className="text-2xl" />
+                  </motion.a> */}
+                  <motion.a
+                    href="https://www.instagram.com/bengee_artgallery/profilecard/?igsh=MTExcjV0MjBjZ2wyNA=="
+                    target="_blank"
+                    className="flex justify-center items-center w-[40px]"
+                  >
+                    <RiInstagramFill className="text-3xl" />
+                  </motion.a>
+                  <motion.a
+                    href="https://www.facebook.com/profile.php?id=100083589693457&mibextid=rS40aB7S9Ucbxw6V"
+                    target="_blank"
+                    className="flex justify-center items-center w-[40px]"
+                  >
+                    <RiFacebookCircleFill className="text-3xl" />
+                  </motion.a>
+                  <motion.a
+                    href="https://wa.me/2347010053127"
+                    target="_blank"
+                    className="flex justify-center items-center w-[40px]"
+                  >
+                    <FaWhatsapp className="text-3xl" />
+                  </motion.a>
+                </div>
+
+                <p className="flex gap-1 items-center text-light-200 justify-center tracking-wide my-12 font-light">
+                  <span>{new Date().getFullYear()} .</span>
+
+                  <span> &copy; BenGee ArtGallery</span>
+
+
+                </p>
+
+
+
               </motion.div>
             </div>
           </div>
@@ -155,5 +176,8 @@ const Footer = () => {
     </footer>
   );
 };
+
+
+
 
 export default Footer;

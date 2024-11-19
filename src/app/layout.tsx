@@ -21,10 +21,44 @@ const helvetica = localFont({
   variable: '--font-helvetica',
 });
 
+
+
 export const metadata: Metadata = {
-  title: 'BenGee Art Gallery',
-  description: 'Creative Minded',
-};
+  title: "BenGee ArtGallery",
+  description: "Are you looking for a trusted brand to handle your portraits and frames with top quality? BenGee ArtGallery got you covered ",
+  openGraph: {
+    type: "website",
+    locale: "en_IE",
+    url: "https://ben-gee-art-gallery.vercel.app",
+    siteName: "BenGee ArtGallery",
+    title: "BenGee ArtGallery",
+    description: "BenGee ArtGallery's website",
+
+    images: [
+      {
+        url: "https://ben-gee-art-gallery.vercel.app/openGraph-image.png",
+        width: 800,
+        height: 600,
+        alt: "Og Image Alt",
+        type: "image/png",
+      },
+      {
+        url: "https://ben-gee-art-gallery.vercel.app/openGraph-image.png",
+        width: 900,
+        height: 800,
+        alt: "Og Image Alt Second",
+        type: "image/png",
+      },
+      { url: "https://ben-gee-art-gallery.vercel.app/openGraph-image.png" },
+      { url: "https://ben-gee-art-gallery.vercel.app/openGraph-image.png" },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  }
+}
+
+
 
 export default function RootLayout({
   children,
