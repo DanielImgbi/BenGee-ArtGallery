@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const AudienceSection = () => {
-  const mainText = ['Quality,', 'Top nortch:', 'We\'ve got you covered.'];
+  const mainText = ['Quality,', 'Top notch:', 'We\'ve got you covered.'];
 
 
   return (
